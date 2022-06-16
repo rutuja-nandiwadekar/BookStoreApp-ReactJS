@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.header {
+    padding: 15px 0;
+    top: 0px;
+    left: 0px;
+    width: 1600px;
+    height: 60px;
+    background: #A03037 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    height: 30px;
+    color: white;
+}
+
+.logo-content-img {
+    margin-right: 5px;
+    align-content: center;
+}
+
+.logo-content {
+    margin-left: 6px;
+    background: #A03037 0% 0% no-repeat padding-box;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.link-home {
+    text-align: right;
+    color: white;
+    padding: 5px;
+}
