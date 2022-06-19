@@ -21,7 +21,6 @@ import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import "./RegistrationForm.css"
 import UserService from '../../services/UserService';
 
-
 export default function RegistrationForm() {
 
     //for password 
@@ -90,10 +89,10 @@ export default function RegistrationForm() {
 
     };
 
-
     return (
         <div>
-            <header className="header-content header">
+
+            <header className="header">
                 <div className="logo-content">
                     <img
                         src="./education.svg"
@@ -105,8 +104,13 @@ export default function RegistrationForm() {
                         <span className="text">BookStore</span>
                     </div>
                 </div>
+                <a href="/home">
+                    <img src="./home.png"
+                        height={25}
+                        width={27}
+                        className="home-image"></img>
+                </a>
             </header>
-
 
             <div className="form-content">
 
@@ -115,7 +119,7 @@ export default function RegistrationForm() {
                     <div className="form-head-content">
                         <div className="form-head">BookStore Sign up
                             <Link to="/home" >
-                                <img className="logo-content-img2" src="../cancel.png" style={{ height: "20px" }} />
+                                <img className="logo-content-image2" src="../cancel.png" style={{ height: "20px" }} />
                             </Link>
                         </div>
                     </div>

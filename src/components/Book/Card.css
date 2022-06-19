@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-card {
+  overflow: hidden;
+  box-shadow: 0 2px 3px grey;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px;
+  width: 10rem;
+  height: 15rem;
+  width: 235px;
+  height: 315px;
+  margin-left: 4rem;
+}
+
+.card-image {
+  height: 7rem;
+  object-fit: cover;
+  margin-top: 1rem;
+  width: 5rem;
+  width: 105px;
+  height: 135px;
+}
+
+.card-title {
+  top: 322px;
+  margin-right: 70px;
+  width: 132px;
+  height: 17px;
+  text-align: left;
+  font: normal normal normal 14px/17px Lato;
+  letter-spacing: 0px;
+  color: #0A0102;
+  opacity: 1;
+}
+
+.card-title-author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-author {
+  top: 340px;
+  margin-right: 140px;
+  width: 63px;
+  height: 12px;
+  text-align: left;
+  font: normal normal normal 10px/12px Lato;
+  letter-spacing: 0px;
+  color: #9D9D9D;
+  opacity: 1;
+}
+
+.card-price {
+  margin-right: 155px;
+  top: 360px;
+  left: 196px;
+  width: 46px;
+  height: 15px;
+  font: normal normal bold 12px/15px Lato;
+  letter-spacing: 0px;
+  color: #0A0102;
+  opacity: 1;
+}
+
+.card-descriptions {
+  padding: 0 1rem;
+}
+
+.card-add-button {
+  width: 83px;
+  height: 30px;
+  background: #a03037 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  opacity: 1;
+  text-align: center;
+  font: normal normal medium 11px/13px Lato;
+  font-size: 10px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.card-wishlist-button {
+  width: 83px;
+  height: 30px;
+  border: 1px solid #9d9d9d;
+  border-radius: 8px;
+  opacity: 1;
+  text-align: left;
+  font: normal normal medium 11px/13px Lato;
+  letter-spacing: 0px;
+  color: #0a0102;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.card-button {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.book-card:hover {
+  transform: scale(1.02);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 10rem));
+}
+
+.card-image-container {
+  width: 233px;
+  height: 171px;
+  background: #f5f5f5 0% 0% no-repeat padding-box;
+  border-radius: 2px 2px 0px 0px;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+}
+
+
+

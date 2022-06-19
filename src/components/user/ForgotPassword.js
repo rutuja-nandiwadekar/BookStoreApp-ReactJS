@@ -36,7 +36,7 @@ export default function ForgotPassword(props) {
   return (
     <div>
 
-      <header className="header-content header">
+      <header className="header">
         <div className="logo-content">
           <img
             src="./education.svg"
@@ -48,6 +48,13 @@ export default function ForgotPassword(props) {
             <span className="text">BookStore</span>
           </div>
         </div>
+
+        <a href="/home">
+          <img src="./home.png"
+            height={25}
+            width={27}
+            className="home-image"></img>
+        </a>
       </header>
 
       <div className="form-content-forgot">

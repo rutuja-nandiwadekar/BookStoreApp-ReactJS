@@ -79,7 +79,7 @@ export default function LoginForm(props) {
     return (
         <div>
 
-            <header className="header-content header">
+            <header className="header">
                 <div className="logo-content">
                     <img
                         src="./education.svg"
@@ -91,6 +91,12 @@ export default function LoginForm(props) {
                         <span className="text">BookStore</span>
                     </div>
                 </div>
+                <a href="/home">
+                    <img src="./home.png"
+                        height={25}
+                        width={27}
+                        className="home-image"></img>
+                </a>
             </header>
 
             <div className="form-content-login">
@@ -113,14 +119,15 @@ export default function LoginForm(props) {
                             onChange={handleInput}
                         />
                     </div>
-
                     <div className="row-content-login">
-                        <FormControl sx={{ width: '55ch' }} variant="outlined">
-                            <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
+
+                        <FormControl sx={{ width: '24ch' }} variant="outlined">
+                            {/* <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel> */}
                             <OutlinedInput
                                 id="outlined-adornment-password"
-                                type={values.showPassword ? 'text' : 'password'}
                                 name="password"
+                                placeholder='Enter password'
+                                type={values.showPassword ? 'text' : 'password'}
                                 value={userDetails.password}
                                 onChange={handleInput}
                                 endAdornment={
@@ -136,14 +143,16 @@ export default function LoginForm(props) {
                                         </IconButton>
                                     </InputAdornment>
                                 }
-                                label="Password"
+                                className="password-login"
                             />
                         </FormControl>
+
                     </div>
 
+
+
                     <div>
-                        <button
-                            className='button-login' type="login"> Login</button>
+                        <button className='button-login' type="login"> Login</button>
                     </div>
 
                     <div className="link">

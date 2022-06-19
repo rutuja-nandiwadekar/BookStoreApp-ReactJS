@@ -8,7 +8,7 @@ body {
     height: 100%;
 }
 
-.header {
+.header-dashboard {
     width: 100%;
     background-color: #A03037;
     color: #f2f2f2;
@@ -16,40 +16,35 @@ body {
     padding: 15px;
 }
 
-.logo-content {
+.logo-content-dashboard {
     margin-left: 100px;
     display: flex;
 }
 
-.logo-content-img {
+.logo-content-img-dashboard {
     margin-right: 5px;
 }
 
-.button-home{
+.button-dashboard{
     position: absolute;
     right: 0;
-
 }
 
-.button-1 {
-    margin-left: 25px;
+.button-2 {
+    margin-left: 40px;
     background-color: white;
     border: none;
     color: black;
-    padding: 5px;
+    padding: 7px;
     text-align: center;
     font-size: 15px;
     cursor: pointer;
     border-radius: 20%;
+    margin-right: 80px;
+}
+
+.home-image-dashboard{
     margin-right: 20px;
-    
+    position: absolute;
+    right: 0;
 }
-.button-signup{
-    margin-left: 20px;
-}
-.home-image-homepage{
-    margin-right: 20px;
-}
-
-
-

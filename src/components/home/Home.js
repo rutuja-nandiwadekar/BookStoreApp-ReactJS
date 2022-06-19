@@ -1,12 +1,13 @@
-import React from 'react'
 import { Link } from "react-router-dom";
+import React from "react";
+
 import "./Home.css"
 
 export default function () {
+
     return (
         <div>
-
-            <header className="header-content header">
+            <header className="header">
                 <div className="logo-content">
                     <img
                         src="./education.svg"
@@ -19,21 +20,31 @@ export default function () {
                     </div>
                 </div>
 
+                <div className="button-home">
 
-                <div className="link-home">
-                    <Link to="/login" className="link-home"> Login </Link>
-                </div>
+                    <Link to="/dashboard" >
+                        <button className="button-1"> collection </button>
+                    </Link>
 
-                <div className="link-home">
-                    <Link to="/registration" className="link-home"> Sign up </Link>
-                </div>
-                <div className="link-home">
-                    <Link to="/addbook" className="link-home"> Add Book </Link>
+                    <Link to="/login">
+                        <button className="button-1" > Login </button>
+                    </Link>
+
+                    <Link to="/registration">
+                        <button className="button-1"> Signup </button>
+                    </Link>
+
+                    <a href="/home">
+                        <img src="./home.png"
+                            height={25}
+                            width={27}
+                            className="home-image-homepage"></img>
+                    </a>
                 </div>
             </header>
 
-            <h1><center>welcome !!!!!</center></h1>
 
+            <h1><center>welcome to book store !!!!!</center></h1>
         </div>
     )
 }

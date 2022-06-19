@@ -3,39 +3,6 @@ body {
     height: 100%;
 }
 
-.header {
-    padding: 15px 0;
-    top: 0px;
-    left: 0px;
-    width: 1600px;
-    height: 60px;
-    background: #A03037 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
-
-.header-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    height: 30px;
-    color: white;
-}
-
-.logo-content-img {
-    margin-right: 10px;
-    align-content: center;
-}
-
-.logo-content {
-    margin-right: 1200px;
-    background: #A03037 0% 0% no-repeat padding-box;
-    height: 50px;
-    display: flex;
-    align-items: center;
-}
-
 .form-content-login {
     width: 40%;
     margin: 0 auto;
@@ -61,10 +28,10 @@ body {
     padding: 10px;
 }
 
-.input-login {
+.input-login{
     padding: 10px;
     border-radius: 5px;
-    width: 154%;
+    width: 177%;
     border: 1px solid #d1c8c8;
     opacity: 1;
 }
@@ -85,7 +52,7 @@ body {
 
 .button-login {
     background-color: #A03037;
-    margin-top: 10px;
+    margin-top: 80px;
     color: white;
     border-radius: 7px;
     width: 77%;
@@ -96,6 +63,14 @@ body {
     cursor: pointer;
 }
 
-.link {
-    text-align: center;
+.home-image{
+    margin-right: 20px;
+    position: absolute;
+    right: 0;
 }
+
+.password-login{
+    margin-top: 40px;
+    width: 470px;
+}
+

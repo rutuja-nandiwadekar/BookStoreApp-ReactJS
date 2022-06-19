@@ -77,7 +77,8 @@ export default function ResetPassword(props) {
 
     return (
         <div>
-            <header className="header-content header">
+
+            <header className="header">
                 <div className="logo-content">
                     <img
                         src="./education.svg"
@@ -89,8 +90,14 @@ export default function ResetPassword(props) {
                         <span className="text">BookStore</span>
                     </div>
                 </div>
-            </header>
 
+                <a href="/home">
+                        <img src="./home.png"
+                            height={25}
+                            width={27}
+                            className="home-image"></img>
+                    </a>
+            </header>
             <div className="form-content-reset">
 
                 <form className="form-reset" action="#" onSubmit={resetPassword}>

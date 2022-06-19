@@ -2,44 +2,6 @@ body {
   margin: 0;
   height: 100%;
 }
-
-.header {
-  padding: 15px 0;
-
-  width: 1600px;
-  height: 60px;
-  background: #A03037 0% 0% no-repeat padding-box;
-  opacity: 1;
-}
-
-.header-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
-  height: 30px;
-  color: white;
-}
-
-.logo-content-img {
-  margin-right: 5px;
-  align-content: center;
-}
-
-.logo-content-img2 {
-  margin-left: 500px;
-  border-radius: 12px;
-}
-
-.logo-content {
-  margin-right: 1200px;
-  background: #A03037 0% 0% no-repeat padding-box;
-  height: 50px;
-  display: flex;
-  align-items: center;
-}
-
 .form-content {
   width: 45%;
   margin: 0 auto;
@@ -107,4 +69,16 @@ body {
 .link {
   text-align: center;
   padding: 5px;
+}
+
+.home-image{
+  margin-right: 20px;
+  position: absolute;
+    right: 0;
+}
+
+.logo-content-image2{
+  margin-left:500px;
+  border-radius: 50%;
+  margin-top: 2px;
 }
