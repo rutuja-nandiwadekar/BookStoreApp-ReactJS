@@ -274,6 +274,9 @@ export default function RegistrationForm() {
 
                 </form>
             </div>
+            <div class="footer">
+                <p>Copyright © 2020, Bookstore Private Limited. All Rights Reserved</p>
+            </div>
         </div>
     )
 }

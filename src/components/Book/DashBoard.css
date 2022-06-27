@@ -25,11 +25,6 @@ body {
     margin-right: 5px;
 }
 
-.button-dashboard{
-    position: absolute;
-    right: 0;
-}
-
 .button-2 {
     margin-left: 40px;
     background-color: white;
@@ -40,11 +35,114 @@ body {
     font-size: 15px;
     cursor: pointer;
     border-radius: 20%;
-    margin-right: 80px;
+    margin-right: 180px;
 }
 
-.home-image-dashboard{
+.button-dashboard {
+    margin-left: 40px;
+    margin-right: 170px;
+    position: absolute;
+    right: 0;
+}
+
+.button-dashboard-plus {
+    position: absolute;
+    right: 0;
+    margin-right: 200px;
+}
+
+.home-image-dashboard {
     margin-right: 20px;
     position: absolute;
     right: 0;
+}
+
+.supermarket-image-dashboard {
+    margin-right: 90px;
+    position: absolute;
+    right: 0;
+}
+
+.carttext-dashboard {
+    margin-right: 120px;
+    position: absolute;
+    right: 0;
+    top: 23px;
+    font: normal normal normal 10px/13px Roboto;
+    letter-spacing: 0.45px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.search-bar {
+    float: centre;
+    display: flex;
+    font-size: 17px;
+    flex-direction: column;
+    width: 300px;
+    margin-left: 200px;
+    max-height: fit-content;
+    border: none;
+    border-radius: 8px;
+
+}
+
+.search {
+    top: 14px;
+    left: 334px;
+    width: 490px;
+    height: 30px;
+    background: #FCFCFC 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+    position: absolute;
+}
+
+.books {
+    margin-top: 28px;
+    top: 83px;
+    left: 174px;
+    width: 68px;
+    height: 30px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 25px/30px Lato;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+}
+
+.books-count {
+    top: 94px;
+    margin-top: 35px;
+    width: 60px;
+    height: 15px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 12px/15px Lato;
+    letter-spacing: 0px;
+    color: #9D9D9D;
+    opacity: 1;
+}
+
+.count_header {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-style: italic;
+    font-style: bold;
+}
+
+.sort_header {
+    top: 83px;
+    left: 1031px;
+    width: 161px;
+    height: 30px;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E2E2;
+    border-radius: 1px;
+    opacity: 1;
 }

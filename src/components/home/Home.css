@@ -31,25 +31,26 @@ body {
 
 }
 
-.button-1 {
-    margin-left: 25px;
-    background-color: white;
-    border: none;
-    color: black;
-    padding: 5px;
-    text-align: center;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 20%;
-    margin-right: 20px;
-    
-}
-.button-signup{
-    margin-left: 20px;
-}
 .home-image-homepage{
     margin-right: 20px;
 }
+.reg-image-homepage{
+    margin-right: 30px;
+}
+.login-image-homepage{
+    margin-right: 40px;
+}
+.footer{
 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background:  #020202 0% 0% no-repeat padding-box;
+    color: white;
+    text-align: center;
+ font: normal normal medium 12px/15px Lato;
+
+}
 
 

@@ -1,8 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Card.css";
 import book1 from "../../assets/Image 7.png";
+import CartService from "../../services/CartService";
 
 export default function Card(props) {
+
+  const cardHandler = (e) =>{
+    let bookId = props.bookId;
+    console.log(props.bookId)
+    console.log(props.bookName)
+    CartService.addBookToCart(bookId)
+    .then((response)=>{
+      console.log(response)
+      alert(response.data.message)
+    })
+    .catch((error)=>{
+      console.log(error)
+      alert(error.response.data.message)
+    })
+
+  }
   return (
     <div key={props.bookId} className="book-card">
       <div className="card-body">
@@ -24,8 +42,8 @@ export default function Card(props) {
       </div>
 
       <div className="card-button">
-        <button className="card-add-button">ADD TO BAG</button>
-        <button className="card-wishlist-button">WISHLIST</button>
+      <button onClick={cardHandler} className="card-add-button">{props.button1}</button>
+        <button className="card-wishlist-button">{props.button2}</button>
       </div>
     </div>
   );

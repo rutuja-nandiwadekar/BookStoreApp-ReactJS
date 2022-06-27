@@ -26,25 +26,29 @@ export default function () {
                         <button className="button-1"> collection </button>
                     </Link>
 
-                    <Link to="/login">
-                        <button className="button-1" > Login </button>
-                    </Link>
-
-                    <Link to="/registration">
-                        <button className="button-1"> Signup </button>
-                    </Link>
-
-                    <a href="/home">
-                        <img src="./home.png"
+                    <a href="/login">
+                        <img src="./login.png"
                             height={25}
                             width={27}
-                            className="home-image-homepage"></img>
+                            className="login-image-homepage"></img>
+                    </a>
+
+                    <a href="/registration">
+                        <img src="./add-user-2.png"
+                            height={25}
+                            width={27}
+                            className="reg-image-homepage"></img>
                     </a>
                 </div>
             </header>
 
 
             <h1><center>welcome to book store !!!!!</center></h1>
+
+            <div class="footer">
+                <p>Copyright © 2020, Bookstore Private Limited. All Rights Reserved</p>
+            </div>
         </div>
+
     )
 }

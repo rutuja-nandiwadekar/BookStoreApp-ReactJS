@@ -2,19 +2,38 @@ import axios from "axios";
 
 class BookService {
 
-    baseUrl = 'http://localhost:8080/book'
+  baseUrl = 'http://localhost:8080/book'
+  token = localStorage.getItem('token');
 
-
-    addNewBook = (bookData) => {
-
-        console.log(bookData);
-        return axios.post(`${this.baseUrl}`+ "/add", bookData);
+  authAxios = axios.create({
+    baseURL: this.baseUrl,
+    headers: {
+      token: `${this.token}`
     }
+  })
 
-    getAllBooks() {
-    
-        return axios.get(`${this.baseUrl}` + "/getall");
-      }
+  addNewBook = (userData) => {
+
+    console.log(this.token);
+    return this.authAxios.post(`/add/`, userData);
+  }
+
+  getAllBooks() {
+    return axios.get(`${this.baseUrl}` + "/getall");
+  }
+
+  searchByBookName(search) {
+    console.log(search);
+    return axios.get(`${this.baseUrl}` + "/searchByName?name=" + search)
+  }
+
+  getAllInIncreasingOrder() {
+    return axios.get(`${this.baseUrl}` + "/getBookByAscendingPrice");
+  }
+
+  getAllInDecreasingOrder() {
+    return axios.get(`${this.baseUrl}` + "/getBookByDescendingPrice");
+  }
 
 }
 

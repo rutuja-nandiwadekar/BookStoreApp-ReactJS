@@ -6,6 +6,7 @@ import ForgotPassword from "./components/user/ForgotPassword";
 import ResetPassword from "./components/user/ResetPassword";
 import AddBook from "./components/Book/AddBook";
 import DashBoard from "./components/Book/DashBoard";
+import AddToBag from "./components/Book/AddToBag";
 
 
 
@@ -17,6 +18,7 @@ function App() {
     {/* <HomeHeader></HomeHeader> */}
       <BrowserRouter>
         <Switch>
+        <Route exact path='/bag' component={AddToBag}></Route>
         <Route exact path='/dashboard' component={DashBoard}></Route>
         <Route exact path='/addbook' component={AddBook}></Route>
           <Route exact path='/resetpass' component={ResetPassword}></Route>
@@ -30,6 +32,7 @@ function App() {
           <Route path='/resetpass' component={ResetPassword}></Route>
           <Route path='/addbook' component={AddBook}></Route>
           <Route path='/dashboard' component={DashBoard}></Route>
+          <Route path='/bag' component={AddToBag}></Route>
         </Switch>
       </BrowserRouter>
      

@@ -38,6 +38,9 @@ export default function (props) {
         console.log("from add book method")
         console.log(bookData)
 
+        let token = localStorage.getItem("token");
+        console.log(token);
+
         BookService.addNewBook(bookData).then((response) => {
             console.log("Added" + response)
             alert("Book added successfully...");
@@ -179,6 +182,10 @@ export default function (props) {
                         <button type="submit" className="button" id="button" > Add Book </button>
                     </div>
                 </form>
+            </div>
+
+            <div class="footer">
+                <p>Copyright © 2020, Bookstore Private Limited. All Rights Reserved</p>
             </div>
 
 

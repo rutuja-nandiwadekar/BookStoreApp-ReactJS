@@ -8,7 +8,6 @@ import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';
 import FormControl from '@mui/material/FormControl';
 import OutlinedInput from '@mui/material/OutlinedInput';
-import InputLabel from '@mui/material/InputLabel';
 import InputAdornment from '@mui/material/InputAdornment';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
@@ -65,10 +64,16 @@ export default function LoginForm(props) {
 
         UserService.userLogin(loginData).then((response) => {
             console.log("Login" + response)
+            
+  
             alert("Logined successfully");
             props.history.push({
-                pathname: "/home",
+                pathname: "/dashboard",
             });
+
+            let token = response.data.data;
+        localStorage.setItem("token", token);
+        
         }).catch((response) => {
             alert(response.response.data.data);
         });
@@ -164,6 +169,10 @@ export default function LoginForm(props) {
                     </div>
                 </form>
 
+            </div>
+
+            <div class="footer">
+                <p>Copyright © 2020, Bookstore Private Limited. All Rights Reserved</p>
             </div>
         </div>
     )

@@ -1,0 +1,142 @@
+.cart-count_header {
+  display: flex;
+  align-items: center;
+  width: 80%;
+
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  font-style: italic;
+  font-style: bold;
+}
+
+.cart {
+  margin-top: 33px;
+  top: 83px;
+  left: 170px;
+  width: 88px;
+  height: 30px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal normal 25px/30px Lato;
+  letter-spacing: 0px;
+  color: #0A0102;
+  opacity: 1;
+}
+
+.cart-count {
+  top: 94px;
+  margin-top: 39px;
+  width: 60px;
+  height: 16px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal normal 12px/15px Lato;
+  letter-spacing: 0px;
+  color: #9D9D9D;
+  opacity: 1;
+}
+
+
+.cart-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 30px;
+  margin-top: 50px;
+  margin-right: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 10rem));
+  overflow: hidden;
+  box-shadow: 0 2px 7px grey;
+  border-radius: 10px;
+  display: flex;
+}
+
+.cart-box {
+  max-width: 200;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  margin-left: 30px;
+
+  overflow: hidden;
+  box-shadow: 0 2px 3px grey;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px;
+  width: 10rem;
+  height: 15rem;
+  width: 235px;
+  height: 315px;
+  margin-left: 4rem;
+}
+
+.cart-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.place__order {
+  display: flex;
+  justify-content: end;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cart_quantity {
+  display: flex;
+  justify-content: center;
+  top: 30px;
+  width: 120px;
+  height: 15px;
+  font: normal normal bold 12px/15px Lato;
+  letter-spacing: 0px;
+  color: #0A0102;
+  opacity: 1;
+
+}
+
+.quantity_text {
+  width: 20%;
+  margin-left: 10px;
+}
+
+.remove-button {
+  width: 83px;
+  height: 30px;
+  background: #a03037 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  opacity: 1;
+  text-align: center;
+  font: normal normal medium 11px/13px Lato;
+  font-size: 10px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-top: 13px;
+  cursor: pointer;
+}
+
+.placeorder-button {
+  top: 308px;
+  width: 151px;
+  height: 35px;
+  /* UI Properties */
+  background: #3371B5 0% 0% no-repeat padding-box;
+  border-radius: 2px;
+  opacity: 1;
+  margin-left: 1300px;
+  text-align: center;
+  font: normal normal medium 14px/17px Lato;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  opacity: 1;
+  border-radius: 8px;
+  margin-top: 120px;
+
+}
